@@ -639,6 +639,8 @@
       if(typeof draw === "string") {
         draw = draw.toUpperCase().replace(/-/g, "_");
         return Skycons.hasOwnProperty(draw) ? Skycons[draw] : null;
+      } else {
+        return draw;
       }
     },
     add: function(el, draw) {
